@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="final test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/final test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="./" />
+					<Add directory="tests" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/final test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="./" />
+					<Add directory="tests" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="C:/GraphicsLib/GLFW/include" />
+			<Add directory="C:/GraphicsLib/GLEW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="C:/Program Files/CodeBlocks/MinGW/i686-w64-mingw32/lib/libopengl32.a" />
+			<Add library="C:/GraphicsLib/GLFW/lib-mingw-w64/libglfw3.a" />
+			<Add library="C:/GraphicsLib/GLFW/lib-mingw-w64/libglfw3dll.a" />
+			<Add library="C:/GraphicsLib/GLEW/lib/Release/Win32/glew32.lib" />
+			<Add directory="C:/GraphicsLib/GLFW/lib-mingw-w64" />
+			<Add directory="C:/GraphicsLib/GLEW/lib/Release/Win32" />
+		</Linker>
+		<Unit filename="IndexBuffer.cpp" />
+		<Unit filename="IndexBuffer.h" />
+		<Unit filename="Renderer.cpp" />
+		<Unit filename="Renderer.h" />
+		<Unit filename="Resource/Basic.shader" />
+		<Unit filename="Shaders.cpp" />
+		<Unit filename="Shaders.h" />
+		<Unit filename="TestClearColor.cpp" />
+		<Unit filename="Texture.cpp" />
+		<Unit filename="Texture.h" />
+		<Unit filename="VertexArray.cpp" />
+		<Unit filename="VertexArray.h" />
+		<Unit filename="VertexBuffer.cpp" />
+		<Unit filename="VertexBuffer.h" />
+		<Unit filename="VertexBufferLayout.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="tests/Test.cpp" />
+		<Unit filename="tests/Test.h" />
+		<Unit filename="tests/TestClearColor.cpp" />
+		<Unit filename="tests/TestClearColor.h" />
+		<Unit filename="tests/TestTexture2D.cpp" />
+		<Unit filename="tests/TestTexture2D.h" />
+		<Unit filename="vendor/iamgui/imconfig.h" />
+		<Unit filename="vendor/iamgui/imgui.cpp" />
+		<Unit filename="vendor/iamgui/imgui.h" />
+		<Unit filename="vendor/iamgui/imgui_demo.cpp" />
+		<Unit filename="vendor/iamgui/imgui_draw.cpp" />
+		<Unit filename="vendor/iamgui/imgui_impl_glfw_gl3.cpp" />
+		<Unit filename="vendor/iamgui/imgui_impl_glfw_gl3.h" />
+		<Unit filename="vendor/iamgui/imgui_internal.h" />
+		<Unit filename="vendor/iamgui/stb_rect_pack.h" />
+		<Unit filename="vendor/iamgui/stb_textedit.h" />
+		<Unit filename="vendor/iamgui/stb_truetype.h" />
+		<Unit filename="vendor/stb_image/stb_image.cpp" />
+		<Unit filename="vendor/stb_image/stb_image.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
